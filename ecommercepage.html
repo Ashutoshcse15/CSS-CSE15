@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My E-commerce Store</title>
+
+    <style>
+      body {
+        background-color: rgb(163, 160, 160);
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 260px;
+        background: white;
+        border: 3px solid rgb(40, 38, 38);
+        border-radius: 10px;
+        margin: 40px auto;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .product-img {
+        width: 180px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .name {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 5px 0;
+      }
+
+      .theory {
+        color: rgb(70, 70, 70);
+        margin: 5px 15px;
+        font-size: 14px;
+      }
+
+      .price {
+        font-size: 15px;
+        color: red;
+        font-weight: bold;
+        margin: 20px 10px;
+      }
+
+      .btn {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .btn:hover {
+        background-color: rgb(40, 40, 40);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">My E-commerce Store</h1>
 
     <div class="container">
-        <div class="product-image">
-            <img src="https://imgs.search.brave.com/17IN8soVfEa_FtecOUQyeipBPEFG1URkthmdzYvs6x8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/NzUxMjUwNjk0OTQt/NmEwYzU4MTlkMzQw/P2l4bGliPXJiLTQu/MS4wJml4aWQ9TTN3/eE1qQTNmREI4TUh4/elpXRnlZMmg4TVRW/OGZHRndjR3hsSlRJ/d2QyRjBZMmdsTWpC/elpYSnBaWE1sTWpB/MWZHVnVmREI4ZkRC/OGZId3cmZm09anBn/JnE9NjAmdz0zMDAZ
-            [02]" alt="Product Image">
-        </div>
+      <img
+        src="tshirt.webp"
+        class="product-img"
+      />
 
-        <div class="product-details">
-            <h1 class="product-title">Smart Digital Watch</h1>
-            <p class="price">$79.99</p>
+      <p class="name">Stylish T-Shirt</p>
+      <p class="theory">A comfortable cotton T-shirt perfect for casual wear.</p>
+      <p class="price">PRICE:$499</p>
 
-            <p class="description">
-                This stylish digital watch features fitness tracking, notifications,
-                waterproof design, and long battery life. Perfect for everyday use!
-            </p>
-
-            <button class="buy-btn">Add to Cart</button>
-        </div>
+      <button class="btn">Add to Cart</button>
     </div>
 
-</body>
+  </body>
 </html>
